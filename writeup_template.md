@@ -48,11 +48,11 @@ The best threshold, after several tries, was a ```kernel_size = 7```
 
 ![alt text][image4]
 
-On the masked image, I draw the lines found by the function. But to achieve it was not an easy path, so for that I wrote two more helper functions. 
-	
-	1.	In order to draw the right and left lane, was necessary after fiding the lines, to check the position. As we know we wanted to find the almost diagonal lane lines which has a peculiar slope. So a checker function would get the coordinates and for each one check the slope, if it falls within the parameters it would be stored and averaged to be either the left lanes or the right lanes.
+On the masked image, I draw the lines found by the function. But to achieve it was not an easy path, so for that I wrote two more helper functions.
 
-	2.	With the mean coordinates of the right lane and left lane, I created an extrapolate function, which would get the image and draw the line for the whole image.
+> *Checker Function*: In order to draw the right and left lane, was necessary after fiding the lines, to check the position. As we know we wanted to find the almost diagonal lane lines which has a peculiar slope. So a checker function would get the coordinates and for each one check the slope, if it falls within the parameters it would be stored and averaged to be either the left lanes or the right lanes.
+
+> *Extrapolate Function*: With the mean coordinates of the right lane and left lane, I created an extrapolate function, which would get the image and draw the line for the whole image.
 
 The final result is shown below:
 
